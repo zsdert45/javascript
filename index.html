@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hello world</title>
+    <script>
+        function changeToCat(){
+            document.getElementById('pic').src="cat.jpeg";
+        }
+        function changeToDog(){
+            document.getElementById('pic').src="dog.jfif";
+        }
+    </script>
 </head>
-
 <body>
-<img src="https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=740&t=st=1661624142~exp=1661624742~hmac=08af3fc70baabba57beb2b707f3b55c9e1256d048c3b69fa156314ea24066a41">
-<img src="https://img.freepik.com/free-photo/red-white-cat-i-white-studio_155003-13189.jpg?w=740&t=st=1661624142~exp=1661624742~hmac=08af3fc70baabba57beb2b707f3b55c9e1256d048c3b69fa156314ea24066a41">
-<p>This is a paragraph.</p>
-
+    <img id="pic" src="cat.jpeg"><br>
+    <button type="button" onclick="changeToDog()">DOG</button>
+    <button type="button" onclick="changeToCat()">CAT</button>
 </body>
 </html>
